@@ -3,6 +3,7 @@
 
 def safe_print_list(my_list=[], x=0):
     i = 0
+
     p = 0
     for i in range(0, x):
         try:
@@ -10,6 +11,5 @@ def safe_print_list(my_list=[], x=0):
             p += 1
         except:
             continue
-
-        print()
-        return p
+    print()
+    return p
