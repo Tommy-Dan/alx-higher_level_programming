@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-def safe_print_division(a,b):
+
+def safe_print_division(a, b):
     try:
-        diff = a/b
+        diff = a / b
     except (TypeError, ZeroDivisionError):
         diff = None
     finally:
