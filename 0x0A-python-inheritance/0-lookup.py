@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """Define an object attribute lookup function."""
 
 def lookup(obj):
