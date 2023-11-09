@@ -1,6 +1,14 @@
-Rectangle = __import__('9-rectangle').Rectangle
+#!/usr/bin/python3
+"""Defines the Rectangle class."""
 
-rect = Rectangle(3, 5)
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-print(rect)
-print(rect.area())
+
+class Rectangle(BaseGeometry):
+    """A subclass representing a rectangle."""
+    def __init__(self, width, height):
+        """Constructor."""
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+        self.__width = width
+        self.__height = height
