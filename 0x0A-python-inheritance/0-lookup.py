@@ -1,6 +1,13 @@
 #!/usr/bin/python3
-"""Define an object attribute lookup function."""
+"""Defines an object attribute lookup function."""
+
 
 def lookup(obj):
-    """Return a list  of an object available attributes."""
-    return (dir(obj))
+    """Looks up object attributes and methods.
+    Args:
+        obj (object): the object to list.
+
+    Returns:
+        list: the list of attributes.
+    """
+    return dir(obj)
